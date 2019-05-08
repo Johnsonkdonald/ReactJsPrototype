@@ -1,0 +1,373 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* custom Css */
+
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+/*Scrollbar Design*/
+
+
+/* crome */
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    background: #bdbdbd85;
+}
+
+
+/* firefox  */
+
+* {
+    scrollbar-color: #bdbdbd85 transparent;
+    scrollbar-width: thin;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Header Css */
+
+.headerMain {
+    background: #26bfde;
+    width: 100%;
+    padding: 0px;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.headerMain ul {
+    margin: 0px;
+    margin-left: 100px;
+    padding: 18px 10px;
+    float: left;
+}
+
+.headerMain ul.floatRight {
+    float: right;
+    margin: 0px;
+}
+
+.headerMain ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 6px;
+}
+
+.headerMain ul li h3.title {
+    color: #fff;
+    margin: 0px;
+}
+
+.headerMain ul li a.uiUx {
+    color: #777;
+    display: block;
+    background: #fdfdfd;
+    padding: 6px 14px 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.headerMain ul.floatRight li a.uiUx {
+    background: #c50622;
+    color: #fff;
+    letter-spacing: unset;
+    font-weight: 400;
+    margin-left: 10px;
+}
+
+.headerMain ul li a.link {
+    color: #ffffffe6;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.headerMain ul li a span {
+    margin: 0 8px;
+    font-size: 14px;
+    position: relative;
+    top: -1px;
+}
+
+.headerMain ul.floatRight li.icon:nth-last-child(1) img {
+    width: 18px;
+    padding: 0;
+    margin: 0 15px;
+    transform: scale(1.5);
+    position: relative;
+    top: 4px;
+}
+
+.headerMain ul.floatRight li.icon img {
+    width: 18px;
+    padding: 0;
+    margin: 0 10px;
+    transform: scale(2);
+    position: relative;
+    top: 4px;
+    cursor: pointer;
+}
+
+.headerMain ul li a {
+    display: block;
+}
+
+
+/* SideBar Css */
+
+.sidebar {
+    background: #13b1cd;
+    padding: 0px;
+    width: 100px;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    overflow: auto;
+    z-index: 99;
+}
+
+.sidebar ul {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.sidebar ul li {
+    list-style: none;
+}
+
+.sidebar ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.sidebar ul li img.menubar {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul li img.progileImg {
+    border-radius: 50px;
+}
+
+.sidebar ul li img {
+    display: inline-block;
+    width: 40px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.sidebar ul li.icon img {
+    width: 30px;
+    margin-bottom: 20px;
+}
+
+.sidebar ul li.icon {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.sidebar ul li.icon::after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    bottom: 0;
+    left: 50%;
+    width: 30px;
+    height: 1px;
+    transform: translate(-50%, -50%);
+}
+
+.sidebar ul li.icon:nth-last-child(1)::after {
+    display: none;
+}
+
+.sidebar ul li.icon a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    bottom: 13px;
+}
+
+
+/* Content Body */
+
+.contentBody {
+    margin-left: 100px;
+    margin-top: 63px;
+    padding: 15px;
+    display: block;
+}
+
+
+/* Footer Css */
+
+.footerMain {
+    background: #eeeeee;
+    width: 100%;
+    padding: 0px;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+.footerMain ul {
+    margin: 0px;
+    margin-left: 100px;
+    padding: 12px 10px;
+    float: left;
+}
+
+.footerMain ul.floatRight {
+    float: right;
+    margin: 0px;
+}
+
+.footerMain ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0px 6px;
+}
+
+.footerMain ul li h3.title {
+    color: #333333;
+    margin: 0px;
+    font-weight: 500;
+    font-size: 14px;
+    position: relative;
+    top: 6px;
+}
+
+.footerMain ul.floatRight li a.uiUx {
+    color: #fff;
+    font-weight: 400;
+    display: block;
+    padding: 8px 14px 8px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.footerMain ul.floatRight li a.cancel {
+    background: #ff4b60;
+}
+
+.footerMain ul.floatRight li a.save {
+    background: #4ba805;
+}
+
+.footerMain ul.floatRight li a.saveVeryfy {
+    background: #63abff;
+}
+
+.footerMain ul li a {
+    display: block;
+}
+
+
+/* Media Query Css */
+
+@media only screen and (max-width: 1440px) {
+    .headerMain ul li {
+        margin: 0px 5px;
+    }
+    .headerMain ul li a.link {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 1360px) {
+    .headerMain ul li {
+        margin: 0px 4px;
+    }
+    .headerMain ul li a.link {
+        font-size: 14px;
+    }
+    .headerMain ul li h3.title {
+        font-size: 16px;
+    }
+    .headerMain ul li a.uiUx {
+        padding: 6px 12px 5px;
+        font-size: 12px;
+    }
+    .headerMain ul.floatRight li.icon img {
+        width: 16px;
+    }
+}
+
+@media only screen and (max-width: 1260px) {
+    .headerMain ul li {
+        margin: 0px 3px;
+    }
+    .headerMain ul li a.link {
+        font-size: 13px;
+    }
+    .headerMain ul li h3.title {
+        font-size: 14px;
+    }
+    .headerMain ul li a.uiUx {
+        padding: 6px 10px 5px;
+        font-size: 11px;
+    }
+    .headerMain ul.floatRight li.icon img {
+        width: 14px;
+    }
+}
